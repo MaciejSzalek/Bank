@@ -1,13 +1,15 @@
 package bank;
 
+import java.math.BigDecimal;
+
 public class User {
 	
 	private static String login;
 	private static String password;
-	private static Integer account;
+	private static BigDecimal account;
 	private static boolean logStatus;
 	
-	public User(String login, String password, Integer account, boolean logStatus) {
+	public User(String login, String password, BigDecimal account, boolean logStatus) {
 		this.login = login;
 		this.password = password;
 		this.account = account;
@@ -22,7 +24,7 @@ public class User {
 		return password;
 	}
 	
-	public Integer getAccount() {
+	public BigDecimal getAccount() {
 		return account;
 	}
 	
@@ -38,7 +40,7 @@ public class User {
 		this.password = password;
 	}
 	
-	public void setAccount(Integer account) {
+	public void setAccount(BigDecimal account) {
 		this.account = account;
 	}
 	
